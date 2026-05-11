@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Zeinab\\\\Downloads\\\\sentinel\" -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Zeinab\\\\Downloads\\\\sentinel\" -Depth 2 -File | Where-Object { $_.Extension -in '.ts','.tsx','.md','.json' } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "PowerShell(Get-ChildItem *)"
+    ]
+  }
+}
